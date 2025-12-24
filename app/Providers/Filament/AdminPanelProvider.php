@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Pages\SendSingleSms;
 use App\Filament\Widgets\LeadStats;
 use App\Filament\Widgets\MaintenanceHealth;
 use Filament\Http\Middleware\Authenticate;
@@ -36,6 +37,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
                 Dashboard::class,
+                SendSingleSms::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
