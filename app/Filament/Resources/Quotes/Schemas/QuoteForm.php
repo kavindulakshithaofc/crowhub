@@ -43,7 +43,7 @@ class QuoteForm
                             ->prefix('LKR ')
                             ->default(0)
                             ->disabled()
-                            ->dehydrated(),
+                            ->dehydrated(false),
                         Forms\Components\TextInput::make('discount')
                             ->numeric()
                             ->prefix('LKR ')
@@ -54,7 +54,7 @@ class QuoteForm
                             ->prefix('LKR ')
                             ->default(0)
                             ->disabled()
-                            ->dehydrated(),
+                            ->dehydrated(false),
                     ]),
                 Section::make('Items')
                     ->columnSpanFull()
